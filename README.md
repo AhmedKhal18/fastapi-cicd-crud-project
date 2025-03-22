@@ -35,7 +35,7 @@ fastapi-cicd-crud-project/
 ├── docker-compose.yml              # App + PostgreSQL orchestration
 ├── requirements.txt
 └── README.md
----
+```
 
 ## 🐳 How to Run
 
