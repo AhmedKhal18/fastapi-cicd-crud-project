@@ -44,11 +44,11 @@ fastapi-cicd-crud-project/
 git clone https://github.com/AhmedKhal18/fastapi-cicd-crud-project.git
 cd fastapi-cicd-crud-project
 ```
-2. Create .env
+### 2. Create .env
 ```bash
 DB_URL=postgresql+asyncpg://postgres:devpassword@postgres-devops:5432/devops_db
 ```
-3. Run with Docker Compose
+### 3. Run with Docker Compose
 ```bash
 docker-compose up --build
 ```
