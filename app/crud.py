@@ -1,11 +1,12 @@
-
 from sqlalchemy.future import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.models import User
 
+
 async def get_users(db: AsyncSession):
     result = await db.execute(select(User))
     return result.scalars().all()
+
 
 async def create_user(db: AsyncSession, name: str, email: str):
     user = User(name=name, email=email)
@@ -13,6 +14,7 @@ async def create_user(db: AsyncSession, name: str, email: str):
     await db.commit()
     await db.refresh(user)
     return user
+
 
 async def update_user(db: AsyncSession, user_id: int, name: str, email: str):
     result = await db.execute(select(User).where(User.id == user_id))
@@ -23,6 +25,7 @@ async def update_user(db: AsyncSession, user_id: int, name: str, email: str):
         await db.commit()
         await db.refresh(user)
     return user
+
 
 async def delete_user(db: AsyncSession, user_id: int):
     result = await db.execute(select(User).where(User.id == user_id))

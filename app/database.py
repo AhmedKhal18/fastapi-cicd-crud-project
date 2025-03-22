@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get DB URL from environment
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = os.getenv("DB_URL")
 print("DB URL:", DATABASE_URL)  # Optional: remove after debugging
 
 # Create SQLAlchemy async engine
