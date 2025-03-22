@@ -13,3 +13,21 @@ async def create_user(db: AsyncSession, name: str, email: str):
     await db.commit()
     await db.refresh(user)
     return user
+
+async def update_user(db: AsyncSession, user_id: int, name: str, email: str):
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalar_one_or_none()
+    if user:
+        user.name = name
+        user.email = email
+        await db.commit()
+        await db.refresh(user)
+    return user
+
+async def delete_user(db: AsyncSession, user_id: int):
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalar_one_or_none()
+    if user:
+        await db.delete(user)
+        await db.commit()
+    return user
