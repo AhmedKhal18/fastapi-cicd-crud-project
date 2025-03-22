@@ -83,13 +83,13 @@ Ensures formatting with black, linting with flake8, and static type checks via m
 ## 📌 Phase 2 (Coming Up)
 Next steps will include:
 
-CI/CD Pipeline with GitHub Actions
+- CI/CD Pipeline with GitHub Actions
 
-Automated testing
+- Automated testing
 
-Multi-environment deployment
+- Multi-environment deployment
 
-Monitoring/logging stack
+- Monitoring/logging stack
 
 ## Author
 Ahmed Khalil
