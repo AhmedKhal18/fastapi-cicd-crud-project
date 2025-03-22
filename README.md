@@ -72,17 +72,15 @@ pre-commit run --all-files
 
 ![image](https://github.com/user-attachments/assets/8c81d2ed-d29c-4289-b577-39f8cd821a08)
 
-
-
 Ensures formatting with black, linting with flake8, and static type checks via mypy.
-📦 Technologies Used
-FastAPI
-SQLAlchemy (Async)
-PostgreSQL
-Docker & Docker Compose
-Pre-commit Hooks (black, flake8, mypy)
+## 📦 Technologies Used
+- FastAPI
+- SQLAlchemy (Async)
+- PostgreSQL
+- Docker & Docker Compose
+- Pre-commit Hooks (black, flake8, mypy)
 
-📌 Phase 2 (Coming Up)
+## 📌 Phase 2 (Coming Up)
 Next steps will include:
 
 CI/CD Pipeline with GitHub Actions
@@ -93,7 +91,7 @@ Multi-environment deployment
 
 Monitoring/logging stack
 
-Author
+## Author
 Ahmed Khalil
 GitHub @AhmedKhal18
 
