@@ -16,8 +16,25 @@ A full-stack backend project demonstrating **FastAPI CRUD operations**, containe
 ---
 
 ## 📁 Project Structure
-. ├── app │ ├── crud.py │ ├── database.py │ ├── main.py │ ├── models.py │ └── tests/ ├── Dockerfile ├── docker-compose.yml ├── requirements.txt ├── .env └── .pre-commit-config.yaml
 
+```bash
+fastapi-cicd-crud-project/
+├── .github/workflows/ci.yml         # CI pipeline (coming soon in Phase 2)
+├── app/
+│   ├── __init__.py
+│   ├── crud.py                      # CRUD operations
+│   ├── database.py                  # DB connection and session
+│   ├── main.py                      # FastAPI app startup
+│   ├── models.py                    # SQLAlchemy models
+│   └── tests/
+│       └── test_main.py            # Unit tests
+├── .env                             # DB config (excluded via .gitignore)
+├── .gitignore
+├── .pre-commit-config.yaml          # Linting and type-check setup
+├── Dockerfile                       # FastAPI app container
+├── docker-compose.yml              # App + PostgreSQL orchestration
+├── requirements.txt
+└── README.md
 ---
 
 ## 🐳 How to Run
@@ -36,18 +53,27 @@ DB_URL=postgresql+asyncpg://postgres:devpassword@postgres-devops:5432/devops_db
 docker-compose up --build
 ```
 App will be available at: http://localhost:8000/docs
-✅ Endpoints
-GET	/	Health check
-GET	/users	Get all users
-POST	/users	Add a new user
-PUT	/users/{user_id}	Update a user
-DELETE	/users/{user_id}	Delete a user
 
 🧹 Linting & Type Checking
 Run the following locally before pushing:
 ```bash
 pre-commit run --all-files
 ```
+📸 Screenshots
+![image](https://github.com/user-attachments/assets/6d0711d5-6ab7-40f6-9fe4-d7c0839c36a9)
+
+![image](https://github.com/user-attachments/assets/f054545b-0956-43fa-978d-b21c19550bc5)
+
+![image](https://github.com/user-attachments/assets/905f3ad9-7d0d-4bfb-907c-11eb51e51dcd)
+
+![image](https://github.com/user-attachments/assets/dc476a78-1e12-4d51-a691-e726cc029aa5)
+
+![image](https://github.com/user-attachments/assets/47bee20f-479f-4f69-9935-b8e047dbe7dc)
+
+![image](https://github.com/user-attachments/assets/8c81d2ed-d29c-4289-b577-39f8cd821a08)
+
+
+
 Ensures formatting with black, linting with flake8, and static type checks via mypy.
 📦 Technologies Used
 FastAPI
