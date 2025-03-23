@@ -51,3 +51,8 @@ async def delete_user(user_id: int, db: AsyncSession = Depends(get_db)):
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     return {"message": f"User {user_id} deleted successfully"}
+
+@app.get("/health")
+def health_check():
+    return {"status": "healthy"}
+
