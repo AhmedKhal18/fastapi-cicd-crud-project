@@ -80,16 +80,12 @@ Ensures formatting with black, linting with flake8, and static type checks via m
 - Docker & Docker Compose
 - Pre-commit Hooks (black, flake8, mypy)
 
-## 📌 Phase 2 (Coming Up)
+## 📌 Phase 3 (Coming Up)
 Next steps will include:
 
-- CI/CD Pipeline with GitHub Actions
-
-- Automated testing
-
-- Multi-environment deployment
-
-- Monitoring/logging stack
+- Setting up AWS Elastic Kubernetes Service (EKS) or EC2 instances for deploying.
+- Setting up RDS for PostgreSQL or using EFS/S3 for storage.
+- Implementing CI/CD pipelines for AWS deployment.
 
 ## Author
 Ahmed Khalil
