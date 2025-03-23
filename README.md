@@ -13,6 +13,10 @@ A full-stack backend project demonstrating **FastAPI CRUD operations**, containe
 ✅ **Pre-commit hooks** with `black`, `flake8`, and `mypy`  
 ✅ Swagger UI documentation at `/docs`
 
+## 📌 Phase 2 Features
+
+✅ Implement Kubernetes setup
+✅ YAML Manifests for Deployments, Services and probes
 ---
 
 ## 📁 Project Structure
