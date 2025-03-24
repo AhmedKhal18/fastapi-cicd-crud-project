@@ -6,17 +6,17 @@ A full-stack backend project demonstrating **FastAPI CRUD operations**, containe
 
 ## 📌 Phase 1 Features
 
--FastAPI** backend with full CRUD (Create, Read, Update, Delete) operations  
--Docker** containerization  
--PostgreSQL** integration via Docker Compose  
--Environment configuration** using `.env`  
--Pre-commit hooks** with `black`, `flake8`, and `mypy`  
--Swagger UI documentation at `/docs`
+- FastAPI** backend with full CRUD (Create, Read, Update, Delete) operations  
+- Docker** containerization  
+- PostgreSQL** integration via Docker Compose  
+- Environment configuration** using `.env`  
+- Pre-commit hooks** with `black`, `flake8`, and `mypy`  
+- Swagger UI documentation at `/docs`
 
 ## 📌 Phase 2 Features
 
--Implement Kubernetes setup
--YAML Manifests for Deployments, Services and probes
+- Implement Kubernetes Setup
+- YAML Manifests for Deployments, Services and probes
 ---
 
 ## 📁 Project Structure
