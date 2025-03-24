@@ -15,8 +15,8 @@ A full-stack backend project demonstrating **FastAPI CRUD operations**, containe
 
 ## 📌 Phase 2 Features
 
-✅ Implement Kubernetes setup
-✅ YAML Manifests for Deployments, Services and probes
+✅ **Implement Kubernetes setup
+✅ **YAML Manifests for Deployments, Services and probes
 ---
 
 ## 📁 Project Structure
